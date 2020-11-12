@@ -43,7 +43,7 @@ def loader(path=None):
                             image = rotate(image, rot)
                             image = np.expand_dims(image, axis=-1)
                             class_image.append(image)
-                            current_save.append(class_image)
+                        current_save.append(class_image)
                     count += 1
                 except NotADirectoryError:
                     print(f"Cannot load from {path2}")
